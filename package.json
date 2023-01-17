@@ -1,0 +1,31 @@
+{
+  "name": "recipe_restful_api",
+  "version": "1.0.0",
+  "description": "RESTful API for recipe project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/venit1123/recipe_RESTful_api.git"
+  },
+  "author": "Itzel VM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/venit1123/recipe_RESTful_api/issues"
+  },
+  "homepage": "https://github.com/venit1123/recipe_RESTful_api#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.3",
+    "nodemon": "^2.0.20"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2"
+  }
+}
