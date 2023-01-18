@@ -1,8 +1,13 @@
 const routes = (app) => {
     app.route('/recipe')
-    .get((req, res) => {
+    .get((req, res,  next) => {
+        console.log(`HERE: ${req.originalUrl}`)
+        console.log(`HERE2: ${req.method}`)
+        next();
+    }, (req, res, next) => {
         res.send("GET request sucessful")
     })
+
     .post((req, res) => {
         res.send("POST request sucessful")
     })
@@ -17,3 +22,7 @@ const routes = (app) => {
 }
 
 export default routes
+
+/* Note: A middleware is an express function that access the request 
+    and response objects and acts on them 
+*/
